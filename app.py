@@ -16,8 +16,6 @@ import gradio as gr, PyPDF2, os, re
 
 from sklearn.metrics.pairwise import cosine_similarity
 
-model = SentenceTransformer('all-MiniLM-L6-v2')
-
 SKILL_BANK = ["Python", "PyTorch", "TensorFlow", "Machine Learning", "Deep Learning",
               "LLM", "Llama-3", "LoRA", "PEFT", "Transformers", "RAG", "Qdrant",
               "FastAPI", "Gradio", "AI Agents", "Colab", "SQL", "Docker", "Kubernetes"]
