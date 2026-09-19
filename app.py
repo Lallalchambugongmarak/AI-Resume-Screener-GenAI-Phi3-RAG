@@ -83,4 +83,5 @@ with gr.Blocks(title="AI Resume Screener - GenAI Phi3 RAG") as demo:
     
     demo.launch()
     import os
+    if __name__ == "_main_";
 demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 10000)))
