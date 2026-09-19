@@ -5,4 +5,3 @@ accelerate
 PyPDF2
 sentence-transformers
 scikit-learn
-pyaudioop
