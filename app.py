@@ -1,9 +1,16 @@
 import sys
-import audioop
-# Fix for Python 3.13+ where audioop was removed
-sys.modules['audioop'] = audioop
-sys.modules['pyaudioop'] = audioop
-import audioop as audiop_test
+try:
+    import audioop
+except ModuleNotFoundError:
+    import audioop_lts as audioop
+    sys.modules['audioop'] = audioop
+    sys.modules['pyaudioop'] = audioop
+else:
+    sys.modules['pyaudioop'] = audioop
+
+import os
+import gradio as gr
+# ... rest of your code stays same
 
 import gradio as gr, PyPDF2, os, re
 from sentence_transformers import SentenceTransformer
@@ -79,3 +86,7 @@ with gr.Blocks(title="AI Resume Screener - GenAI Phi3 RAG") as demo:
     btn.click(fn=analyze_resume, inputs=[jd_input, file_input], outputs=[output_table, status])
 
 demo.launch()
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    demo.launch(server_name="0.0.0.0", server_port=port)
