@@ -2,10 +2,6 @@
 
 > Bulk ATS that ranks Top 10 candidates with Match % + Strengths + Missing Skills. Explainable AI for HR.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-HuggingFace-yellow)](https://huggingface.co/spaces/YOUR_USERNAME_HERE)
-[![Python](https://img.shields.io/badge/Python-3.10-blue)]()
-[![GenAI](https://img.shields.io/badge/GenAI-Phi3--mini--4k-green)]()
-
 ## 🚀 Problem Solved
 HR gets 500+ resumes per JD. Manual screening = 20+ hours. This tool does it in 2 minutes with AI reasoning.
 
