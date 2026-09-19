@@ -2,4 +2,4 @@ gradio
 PyPDF2
 sentence-transformers
 scikit-learn
-pyaudioop
+audioop-lts
