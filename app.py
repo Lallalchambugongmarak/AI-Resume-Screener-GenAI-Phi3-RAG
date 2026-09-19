@@ -1,3 +1,10 @@
+import sys
+import audioop
+# Fix for Python 3.13+ where audioop was removed
+sys.modules['audioop'] = audioop
+sys.modules['pyaudioop'] = audioop
+import audioop as audiop_test
+
 import gradio as gr, PyPDF2, os, re
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
