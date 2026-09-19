@@ -13,7 +13,7 @@ import gradio as gr
 # ... rest of your code stays same
 
 import gradio as gr, PyPDF2, os, re
-from sentence_transformers import SentenceTransformer
+
 from sklearn.metrics.pairwise import cosine_similarity
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
