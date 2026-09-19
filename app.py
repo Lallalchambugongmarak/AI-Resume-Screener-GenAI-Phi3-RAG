@@ -13,7 +13,6 @@ import gradio as gr
 # ... rest of your code stays same
 
 import gradio as gr, PyPDF2, os, re
-
 from sklearn.metrics.pairwise import cosine_similarity
 
 SKILL_BANK = ["Python", "PyTorch", "TensorFlow", "Machine Learning", "Deep Learning",
